@@ -7,11 +7,11 @@ public final class SharedPreferencesStorage implements Storage {
 
   private final SharedPreferences preferences;
 
-  SharedPreferencesStorage(Context context, String tag) {
+  public SharedPreferencesStorage(Context context, String tag) {
     preferences = context.getSharedPreferences(tag, Context.MODE_PRIVATE);
   }
 
-  SharedPreferencesStorage(SharedPreferences preferences) {
+  public SharedPreferencesStorage(SharedPreferences preferences) {
     this.preferences = preferences;
   }
 
